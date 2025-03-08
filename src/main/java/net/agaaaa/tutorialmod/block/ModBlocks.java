@@ -20,6 +20,8 @@ public class ModBlocks {
 
     public static final Block RED_AMOGUS_BLOCK = registerBlock("red_amogus_block", AbstractBlock.Settings.create().strength(4f)
             .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK).burnable());
+    public static final Block BLUE_AMOGUS_BLOCK = registerBlock("blue_amogus_block", AbstractBlock.Settings.create().strength(4f)
+            .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK).luminance(state -> 15));
 
     private static Block registerBlock(String name, AbstractBlock.Settings blockSettings) {
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TutorialMod.MOD_ID, name));
@@ -38,6 +40,7 @@ public class ModBlocks {
         TutorialMod.LOGGER.info("Registering Mod Blocks for " + TutorialMod.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.RED_AMOGUS_BLOCK);
+            entries.add(ModBlocks.BLUE_AMOGUS_BLOCK);
         });
     }
 }
