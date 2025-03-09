@@ -1,6 +1,7 @@
 package net.agaaaa.tutorialmod;
 
 import net.agaaaa.tutorialmod.block.ModBlocks;
+import net.agaaaa.tutorialmod.item.ModItemGroups;
 import net.agaaaa.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,6 +15,7 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}
