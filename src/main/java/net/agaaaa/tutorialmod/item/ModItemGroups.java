@@ -26,6 +26,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.BLUE_AMOGUS_BLOCK);
                         entries.add(ModBlocks.RED_AMOGUS_BLOCK);
+                        entries.add(ModBlocks.RED_AMOGUS_ORE);
+                        entries.add(ModBlocks.BLUE_AMOGUS_ORE);
                     }).build());
 
     public static void registerItemGroups() {

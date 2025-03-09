@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": ["tutorialmod:blue_amogus_block"],
+  "result": {
+    "count": 9,
+    "id": "tutorialmod:blue_amogus"
+  }
+}

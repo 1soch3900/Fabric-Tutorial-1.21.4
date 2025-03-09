@@ -4,6 +4,9 @@
   "item.tutorialmod.red_amogus_block": "Red Amogus Block",
   "block.tutorialmod.red_amogus_block": "Red Amogus Block",
   "item.tutorialmod.blue_amogus_block": "Blue Amogus Block",
+  "item.tutorialmod.red_amogus_ore": "Red Amogus Ore",
+    "item.tutorialmod.blue_amogus_ore": "Blue Amogus Ore",
+
   "itemgroups.tutorialmod.amogus_items": "Amogus Items",
   "itemgroups.tutorialmod.amogus_blocks": "Amogus Blocks"
 }
