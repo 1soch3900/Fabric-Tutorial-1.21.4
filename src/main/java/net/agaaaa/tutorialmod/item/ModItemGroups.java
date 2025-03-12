@@ -18,6 +18,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.RED_AMOGUS);
                         entries.add(ModItems.BLUE_AMOGUS);
+                        entries.add(ModItems.AMOGUS_CHISEL);
                     }).build());
     public static final ItemGroup AMOGUS_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(TutorialMod.MOD_ID, "amogus_blocks"),
