@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "red_amogus",
+  "ingredient": "tutorialmod:red_amogus_ore",
+  "result": {
+    "id": "tutorialmod:red_amogus"
+  }
+}

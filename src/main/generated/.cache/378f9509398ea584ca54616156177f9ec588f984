@@ -1,0 +1,6 @@
+// 1.21.4	-999999999-01-01T00:00:00	Tutorial Mod/Block Loot Tables
+e86063ff6383e6ea82495b52c02216f8a07c9135 data/tutorialmod/loot_table/blocks/blue_amogus_block.json
+dd66c6263e5dde8f87a85eaf5c6a94050d2e8b91 data/tutorialmod/loot_table/blocks/blue_amogus_ore.json
+f5491d2401914c9510648da68e8586cd9dc2ce3e data/tutorialmod/loot_table/blocks/magic_amogus_block.json
+407f615d43e7838d91e3eea98a57875ee3c94223 data/tutorialmod/loot_table/blocks/red_amogus_block.json
+c15c446a2142e2df79025abedbb5e2118490359a data/tutorialmod/loot_table/blocks/red_amogus_ore.json
