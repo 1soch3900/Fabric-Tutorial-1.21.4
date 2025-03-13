@@ -18,6 +18,8 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
+import java.util.function.Function;
+
 public class ModBlocks {
 
 
@@ -29,22 +31,28 @@ public class ModBlocks {
             .sounds(BlockSoundGroup.AMETHYST_BLOCK).luminance(state -> 15));
 
     public static final Block RED_AMOGUS_ORE = registerBlock("red_amogus_ore",
-            ExperienceDroppingBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE));
-    public static final Block BLUE_AMOGUS_ORE = registerBlock("blue_amogus_ore", ExperienceDroppingBlock
-            .Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE));
+            settings -> new ExperienceDroppingBlock(UniformIntProvider.create(3, 7), settings),
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE));
+    public static final Block BLUE_AMOGUS_ORE = registerBlock("blue_amogus_ore",
+            settings -> new ExperienceDroppingBlock(UniformIntProvider.create(3, 7), settings),
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE));
 
     public static final Block MAGIC_AMOGUS_BLOCK = registerBlock("magic_amogus_block",
-            MagicAmogus.Settings.create()
-                    .strength(3f).requiresTool().sounds(BlockSoundGroup.GLASS));
+            MagicAmogus::new,
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.GLASS));
 
 
 
-    private static Block registerBlock(String name, AbstractBlock.Settings blockSettings) {
+    private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings blockSettings) {
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TutorialMod.MOD_ID, name));
-        Block block = new Block(blockSettings.registryKey(key));
+        Block block = (Block) factory.apply(blockSettings.registryKey(key));
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, key, block);
     }
+    private static Block registerBlock(String name, AbstractBlock.Settings blockSettings) {
+        return registerBlock(name, Block::new, blockSettings);
+    }
+
 
     private static void registerBlockItem(String name, Block block) {
         RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(TutorialMod.MOD_ID, name));
