@@ -29,6 +29,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RED_AMOGUS_BLOCK);
                         entries.add(ModBlocks.RED_AMOGUS_ORE);
                         entries.add(ModBlocks.BLUE_AMOGUS_ORE);
+                        entries.add(ModBlocks.MAGIC_AMOGUS_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {
