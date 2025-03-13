@@ -1,7 +1,7 @@
 package net.agaaaa.tutorialmod.block;
 
 import net.agaaaa.tutorialmod.TutorialMod;
-import net.agaaaa.tutorialmod.block.custom.MagicAmogus;
+import net.agaaaa.tutorialmod.block.custom.MagicAmogusBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -38,7 +38,7 @@ public class ModBlocks {
             AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE));
 
     public static final Block MAGIC_AMOGUS_BLOCK = registerBlock("magic_amogus_block",
-            MagicAmogus::new,
+            MagicAmogusBlock::new,
             AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.GLASS));
 
 
