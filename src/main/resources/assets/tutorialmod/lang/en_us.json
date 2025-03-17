@@ -9,6 +9,16 @@
   "item.tutorialmod.amogus_chisel": "Amogus Chisel",
   "item.tutorialmod.magic_amogus_block": "Magic Amogus Block",
 
+  "item.tutorialmod.red_amogus_stairs": "Red Amogus Stairs",
+  "item.tutorialmod.red_amogus_slab": "Red Amogus Slab",
+  "item.tutorialmod.red_amogus_button": "Red Amogus Button",
+  "item.tutorialmod.red_amogus_pressure_plate": "Red Amogus Pressure Plate",
+  "item.tutorialmod.red_amogus_fence": "Red Amogus Fence",
+  "item.tutorialmod.red_amogus_fence_gate": "Red Amogus Fence Gate",
+  "item.tutorialmod.red_amogus_wall": "Red Amogus Wall",
+  "item.tutorialmod.red_amogus_door": "Red Amogus Door",
+  "item.tutorialmod.red_amogus_trapdoor": "Red Amogus Trapdoor",
+
   "itemgroups.tutorialmod.amogus_items": "Amogus Items",
   "itemgroups.tutorialmod.amogus_blocks": "Amogus Blocks"
 }

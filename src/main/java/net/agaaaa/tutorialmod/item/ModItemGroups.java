@@ -30,6 +30,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RED_AMOGUS_ORE);
                         entries.add(ModBlocks.BLUE_AMOGUS_ORE);
                         entries.add(ModBlocks.MAGIC_AMOGUS_BLOCK);
+                        entries.add(ModBlocks.RED_AMOGUS_STAIRS);
+                        entries.add(ModBlocks.RED_AMOGUS_SLAB);
+                        entries.add(ModBlocks.RED_AMOGUS_BUTTON);
+                        entries.add(ModBlocks.RED_AMOGUS_PRESSURE_PLATE);
+                        entries.add(ModBlocks.RED_AMOGUS_FENCE);
+                        entries.add(ModBlocks.RED_AMOGUS_FENCE_GATE);
+                        entries.add(ModBlocks.RED_AMOGUS_WALL);
+                        entries.add(ModBlocks.RED_AMOGUS_DOOR);
+                        entries.add(ModBlocks.RED_AMOGUS_TRAPDOOR);
                     }).build());
 
     public static void registerItemGroups() {

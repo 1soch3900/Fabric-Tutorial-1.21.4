@@ -27,5 +27,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RED_AMOGUS_ORE)
                 .add(ModBlocks.BLUE_AMOGUS_ORE)
                 .add(ModBlocks.MAGIC_AMOGUS_BLOCK);
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES).add(ModBlocks.RED_AMOGUS_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.RED_AMOGUS_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.RED_AMOGUS_WALL);
+
     }
 }

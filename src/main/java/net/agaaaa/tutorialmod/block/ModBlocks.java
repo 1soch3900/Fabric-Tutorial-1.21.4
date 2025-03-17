@@ -3,10 +3,7 @@ package net.agaaaa.tutorialmod.block;
 import net.agaaaa.tutorialmod.TutorialMod;
 import net.agaaaa.tutorialmod.block.custom.MagicAmogusBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -40,6 +37,38 @@ public class ModBlocks {
     public static final Block MAGIC_AMOGUS_BLOCK = registerBlock("magic_amogus_block",
             MagicAmogusBlock::new,
             AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.GLASS));
+
+    public static final Block RED_AMOGUS_STAIRS = registerBlock("red_amogus_stairs",
+            settings -> new StairsBlock(ModBlocks.RED_AMOGUS_BLOCK.getDefaultState(), settings),
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE));
+    public static final Block RED_AMOGUS_SLAB = registerBlock("red_amogus_slab",
+            SlabBlock::new,
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE));
+
+    public static final Block RED_AMOGUS_BUTTON = registerBlock("red_amogus_button",
+            settings -> new ButtonBlock(BlockSetType.IRON, 2, settings),
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE).noCollision());
+    public static final Block RED_AMOGUS_PRESSURE_PLATE = registerBlock("red_amogus_pressure_plate",
+            settings -> new PressurePlateBlock(BlockSetType.IRON, settings),
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE));
+
+    public static final Block RED_AMOGUS_FENCE = registerBlock("red_amogus_fence",
+            FenceBlock::new,
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE));
+    public static final Block RED_AMOGUS_FENCE_GATE = registerBlock("red_amogus_fence_gate",
+            settings -> new FenceGateBlock(WoodType.OAK, settings),
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE));
+    public static final Block RED_AMOGUS_WALL = registerBlock("red_amogus_wall",
+            WallBlock::new,
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE));
+
+    public static final Block RED_AMOGUS_DOOR = registerBlock("red_amogus_door",
+            settings -> new DoorBlock(BlockSetType.IRON, settings),
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE).nonOpaque());
+    public static final Block RED_AMOGUS_TRAPDOOR = registerBlock("red_amogus_trapdoor",
+            settings -> new TrapdoorBlock(BlockSetType.OAK, settings),
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE).nonOpaque());
+
 
 
 

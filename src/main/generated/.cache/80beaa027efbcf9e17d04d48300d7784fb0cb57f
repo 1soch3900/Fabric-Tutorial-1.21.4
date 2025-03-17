@@ -1,3 +1,6 @@
 // 1.21.4	-999999999-01-01T00:00:00	Tutorial Mod/Tags for minecraft:block
+5e5ecad730ac474137645913f8c70ee08eaf8a1e data/minecraft/tags/block/fence_gates.json
 d44770e829e9649e33583eb43d6ffc3d4282b423 data/minecraft/tags/block/mineable/pickaxe.json
 d44770e829e9649e33583eb43d6ffc3d4282b423 data/minecraft/tags/block/needs_iron_tool.json
+98b7f724389de739d844fb07f256aba2197eb08d data/minecraft/tags/block/walls.json
+59f14e5e381eef87c252df44d8cc57be648bb87b data/minecraft/tags/block/wooden_fences.json

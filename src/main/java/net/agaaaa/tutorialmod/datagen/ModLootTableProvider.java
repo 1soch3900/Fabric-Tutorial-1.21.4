@@ -31,8 +31,20 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BLUE_AMOGUS_BLOCK);
         addDrop(ModBlocks.MAGIC_AMOGUS_BLOCK);
 
-        addDrop(ModBlocks.RED_AMOGUS_ORE, multipleOreDrops(ModBlocks.RED_AMOGUS_ORE, ModItems.RED_AMOGUS, 2.0F, 4.0F));
-        addDrop(ModBlocks.BLUE_AMOGUS_ORE, multipleOreDrops(ModBlocks.BLUE_AMOGUS_ORE, ModItems.BLUE_AMOGUS, 2.0F, 4.0F));
+        addDrop(ModBlocks.RED_AMOGUS_ORE, multipleOreDrops(ModBlocks.RED_AMOGUS_ORE,
+                ModItems.RED_AMOGUS, 2.0F, 4.0F));
+        addDrop(ModBlocks.BLUE_AMOGUS_ORE, multipleOreDrops(ModBlocks.BLUE_AMOGUS_ORE,
+                ModItems.BLUE_AMOGUS, 2.0F, 4.0F));
+
+        addDrop(ModBlocks.RED_AMOGUS_STAIRS);
+        addDrop(ModBlocks.RED_AMOGUS_SLAB, slabDrops(ModBlocks.RED_AMOGUS_SLAB));
+        addDrop(ModBlocks.RED_AMOGUS_BUTTON);
+        addDrop(ModBlocks.RED_AMOGUS_PRESSURE_PLATE);
+        addDrop(ModBlocks.RED_AMOGUS_FENCE);
+        addDrop(ModBlocks.RED_AMOGUS_FENCE_GATE);
+        addDrop(ModBlocks.RED_AMOGUS_WALL);
+        addDrop(ModBlocks.RED_AMOGUS_DOOR, doorDrops(ModBlocks.RED_AMOGUS_DOOR));
+        addDrop(ModBlocks.RED_AMOGUS_TRAPDOOR);
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float mindrops, float maxdrops) {

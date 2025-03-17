@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    "tutorialmod:red_amogus_block"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:red_amogus_button"
+  }
+}
