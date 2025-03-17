@@ -69,6 +69,30 @@ public class ModBlocks {
             settings -> new TrapdoorBlock(BlockSetType.OAK, settings),
             AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE).nonOpaque());
 
+    public static final Block BLUE_AMOGUS_STAIRS = registerBlock("blue_amogus_stairs",
+            settings -> new StairsBlock(ModBlocks.RED_AMOGUS_BLOCK.getDefaultState(), settings),
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE));
+    public static final Block BLUE_AMOGUS_SLAB = registerBlock("blue_amogus_slab",
+            SlabBlock::new,
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE));
+
+    public static final Block BLUE_AMOGUS_BUTTON = registerBlock("blue_amogus_button",
+            settings -> new ButtonBlock(BlockSetType.IRON, 2, settings),
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE).noCollision());
+    public static final Block BLUE_AMOGUS_PRESSURE_PLATE = registerBlock("blue_amogus_pressure_plate",
+            settings -> new PressurePlateBlock(BlockSetType.IRON, settings),
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE));
+
+    public static final Block BLUE_AMOGUS_FENCE = registerBlock("blue_amogus_fence",
+            FenceBlock::new,
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE));
+    public static final Block BLUE_AMOGUS_FENCE_GATE = registerBlock("blue_amogus_fence_gate",
+            settings -> new FenceGateBlock(WoodType.OAK, settings),
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE));
+    public static final Block BLUE_AMOGUS_WALL = registerBlock("blue_amogus_wall",
+            WallBlock::new,
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE));
+
 
 
 

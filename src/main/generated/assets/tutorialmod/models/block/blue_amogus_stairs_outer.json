@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "tutorialmod:block/blue_amogus_block",
+    "side": "tutorialmod:block/blue_amogus_block",
+    "top": "tutorialmod:block/blue_amogus_block"
+  }
+}

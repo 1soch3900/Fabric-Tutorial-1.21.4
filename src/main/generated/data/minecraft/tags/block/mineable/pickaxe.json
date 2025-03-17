@@ -4,6 +4,14 @@
     "tutorialmod:blue_amogus_block",
     "tutorialmod:red_amogus_ore",
     "tutorialmod:blue_amogus_ore",
-    "tutorialmod:magic_amogus_block"
+    "tutorialmod:magic_amogus_block",
+    "tutorialmod:red_amogus_stairs",
+    "tutorialmod:red_amogus_slab",
+    "tutorialmod:red_amogus_button",
+    "tutorialmod:red_amogus_pressure_plate",
+    "tutorialmod:blue_amogus_stairs",
+    "tutorialmod:blue_amogus_slab",
+    "tutorialmod:blue_amogus_button",
+    "tutorialmod:blue_amogus_pressure_plate"
   ]
 }

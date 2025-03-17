@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tutorialmod:block/blue_amogus_slab"
+    },
+    "type=double": {
+      "model": "tutorialmod:block/blue_amogus_block"
+    },
+    "type=top": {
+      "model": "tutorialmod:block/blue_amogus_slab_top"
+    }
+  }
+}

@@ -17,10 +17,27 @@ import java.util.Map;
 
 public class ChiselItem extends Item {
 
-    private static final Map<Block, Block> CHISEL_MAP =
+    private static final Map<Block, Block> CHISEL_MAP1 =
             Map.of(
                     ModBlocks.RED_AMOGUS_BLOCK, ModBlocks.BLUE_AMOGUS_BLOCK,
-                    ModBlocks.BLUE_AMOGUS_BLOCK, ModBlocks.RED_AMOGUS_BLOCK
+                    ModBlocks.BLUE_AMOGUS_BLOCK, ModBlocks.RED_AMOGUS_BLOCK,
+                    ModBlocks.RED_AMOGUS_STAIRS, ModBlocks.BLUE_AMOGUS_STAIRS,
+                    ModBlocks.BLUE_AMOGUS_STAIRS, ModBlocks.RED_AMOGUS_STAIRS,
+                    ModBlocks.RED_AMOGUS_SLAB, ModBlocks.BLUE_AMOGUS_SLAB,
+                    ModBlocks.BLUE_AMOGUS_SLAB, ModBlocks.RED_AMOGUS_SLAB,
+                    ModBlocks.RED_AMOGUS_BUTTON, ModBlocks.BLUE_AMOGUS_BUTTON,
+                    ModBlocks.BLUE_AMOGUS_BUTTON, ModBlocks.RED_AMOGUS_BUTTON,
+                    ModBlocks.RED_AMOGUS_PRESSURE_PLATE, ModBlocks.BLUE_AMOGUS_PRESSURE_PLATE,
+                    ModBlocks.BLUE_AMOGUS_PRESSURE_PLATE, ModBlocks.RED_AMOGUS_PRESSURE_PLATE
+            );
+    private static final Map<Block, Block> CHISEL_MAP2 =
+            Map.of(
+                    ModBlocks.RED_AMOGUS_FENCE, ModBlocks.BLUE_AMOGUS_FENCE,
+                    ModBlocks.BLUE_AMOGUS_FENCE, ModBlocks.RED_AMOGUS_FENCE,
+                    ModBlocks.RED_AMOGUS_FENCE_GATE, ModBlocks.BLUE_AMOGUS_FENCE_GATE,
+                    ModBlocks.BLUE_AMOGUS_FENCE_GATE, ModBlocks.RED_AMOGUS_FENCE_GATE,
+                    ModBlocks.RED_AMOGUS_WALL, ModBlocks.BLUE_AMOGUS_WALL,
+                    ModBlocks.BLUE_AMOGUS_WALL, ModBlocks.RED_AMOGUS_WALL
             );
 
     public ChiselItem(Settings settings) {
@@ -32,9 +49,19 @@ public class ChiselItem extends Item {
         World world = context.getWorld();
         Block clickedBlock = world.getBlockState(context.getBlockPos()).getBlock();
 
-        if(CHISEL_MAP.containsKey(clickedBlock)) {
+        if(CHISEL_MAP1.containsKey(clickedBlock)) {
             if(!world.isClient()) {
-                world.setBlockState(context.getBlockPos(), CHISEL_MAP.get(clickedBlock).getDefaultState());
+                world.setBlockState(context.getBlockPos(), CHISEL_MAP1.get(clickedBlock).getDefaultState());
+                context.getStack().damage(1, ((ServerWorld) world),
+                        ((ServerPlayerEntity) context.getPlayer()),
+                        item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
+                world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_ANVIL_PLACE,
+                        SoundCategory.BLOCKS);
+            }
+        }
+        if(CHISEL_MAP2.containsKey(clickedBlock)) {
+            if(!world.isClient()) {
+                world.setBlockState(context.getBlockPos(), CHISEL_MAP2.get(clickedBlock).getDefaultState());
                 context.getStack().damage(1, ((ServerWorld) world),
                         ((ServerPlayerEntity) context.getPlayer()),
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));

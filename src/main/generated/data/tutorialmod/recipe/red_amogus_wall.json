@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "tutorialmod:red_amogus_wall"
+    "#": "tutorialmod:red_amogus_block"
   },
   "pattern": [
     "###",

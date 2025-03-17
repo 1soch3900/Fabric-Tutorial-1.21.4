@@ -86,13 +86,34 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             createFenceGateRecipe(ModBlocks.RED_AMOGUS_FENCE_GATE, Ingredient.ofItem(ModBlocks.RED_AMOGUS_BLOCK))
                     .criterion(hasItem(ModBlocks.RED_AMOGUS_BLOCK), conditionsFromItem(ModBlocks.RED_AMOGUS_BLOCK))
                     .offerTo(exporter);
-            offerWallRecipe(RecipeCategory.DECORATIONS, ModBlocks.RED_AMOGUS_WALL, ModBlocks.RED_AMOGUS_WALL);
+            offerWallRecipe(RecipeCategory.DECORATIONS, ModBlocks.RED_AMOGUS_WALL, ModBlocks.RED_AMOGUS_BLOCK);
             createDoorRecipe(ModBlocks.RED_AMOGUS_DOOR, Ingredient.ofItem(ModBlocks.RED_AMOGUS_BLOCK))
                     .criterion(hasItem(ModBlocks.RED_AMOGUS_BLOCK), conditionsFromItem(ModBlocks.RED_AMOGUS_BLOCK))
                     .offerTo(exporter);
             createTrapdoorRecipe(ModBlocks.RED_AMOGUS_TRAPDOOR, Ingredient.ofItem(ModBlocks.RED_AMOGUS_BLOCK))
                     .criterion(hasItem(ModBlocks.RED_AMOGUS_BLOCK), conditionsFromItem(ModBlocks.RED_AMOGUS_BLOCK))
                     .offerTo(exporter);
+
+            createStairsRecipe(ModBlocks.BLUE_AMOGUS_STAIRS, Ingredient.ofItem(ModBlocks.BLUE_AMOGUS_BLOCK))
+                    .criterion(hasItem(ModBlocks.BLUE_AMOGUS_BLOCK), conditionsFromItem(ModBlocks.BLUE_AMOGUS_BLOCK))
+                    .offerTo(exporter);
+            createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_AMOGUS_SLAB, Ingredient.ofItem(ModBlocks.BLUE_AMOGUS_BLOCK))
+                    .criterion(hasItem(ModBlocks.BLUE_AMOGUS_BLOCK), conditionsFromItem(ModBlocks.BLUE_AMOGUS_BLOCK))
+                    .offerTo(exporter);
+            createButtonRecipe(ModBlocks.BLUE_AMOGUS_BUTTON, Ingredient.ofItem(ModBlocks.BLUE_AMOGUS_BLOCK))
+                    .criterion(hasItem(ModBlocks.BLUE_AMOGUS_BLOCK), conditionsFromItem(ModBlocks.BLUE_AMOGUS_BLOCK))
+                    .offerTo(exporter);
+            createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.BLUE_AMOGUS_PRESSURE_PLATE,
+                    Ingredient.ofItem(ModBlocks.BLUE_AMOGUS_BLOCK))
+                    .criterion(hasItem(ModBlocks.BLUE_AMOGUS_BLOCK), conditionsFromItem(ModBlocks.BLUE_AMOGUS_BLOCK))
+                    .offerTo(exporter);
+            createFenceRecipe(ModBlocks.BLUE_AMOGUS_FENCE, Ingredient.ofItem(ModBlocks.BLUE_AMOGUS_BLOCK))
+                    .criterion(hasItem(ModBlocks.BLUE_AMOGUS_BLOCK), conditionsFromItem(ModBlocks.BLUE_AMOGUS_BLOCK))
+                    .offerTo(exporter);
+            createFenceGateRecipe(ModBlocks.BLUE_AMOGUS_FENCE_GATE, Ingredient.ofItem(ModBlocks.BLUE_AMOGUS_BLOCK))
+                    .criterion(hasItem(ModBlocks.BLUE_AMOGUS_BLOCK), conditionsFromItem(ModBlocks.BLUE_AMOGUS_BLOCK))
+                    .offerTo(exporter);
+            offerWallRecipe(RecipeCategory.DECORATIONS, ModBlocks.BLUE_AMOGUS_WALL, ModBlocks.BLUE_AMOGUS_BLOCK);
         }
     }
 }

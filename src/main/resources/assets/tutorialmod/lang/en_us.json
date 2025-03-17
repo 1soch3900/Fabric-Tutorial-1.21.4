@@ -19,6 +19,14 @@
   "item.tutorialmod.red_amogus_door": "Red Amogus Door",
   "item.tutorialmod.red_amogus_trapdoor": "Red Amogus Trapdoor",
 
+  "item.tutorialmod.blue_amogus_stairs": "Blue Amogus Stairs",
+  "item.tutorialmod.blue_amogus_slab": "Blue Amogus Slab",
+  "item.tutorialmod.blue_amogus_button": "Blue Amogus Button",
+  "item.tutorialmod.blue_amogus_pressure_plate": "Blue Amogus Pressure Plate",
+  "item.tutorialmod.blue_amogus_fence": "Blue Amogus Fence",
+  "item.tutorialmod.blue_amogus_fence_gate": "Blue Amogus Fence Gate",
+  "item.tutorialmod.blue_amogus_wall": "Blue Amogus Wall",
+
   "itemgroups.tutorialmod.amogus_items": "Amogus Items",
   "itemgroups.tutorialmod.amogus_blocks": "Amogus Blocks"
 }

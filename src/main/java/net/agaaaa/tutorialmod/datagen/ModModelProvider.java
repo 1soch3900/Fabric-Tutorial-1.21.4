@@ -26,12 +26,21 @@ public class ModModelProvider extends FabricModelProvider {
         redAmogusPool.fenceGate(ModBlocks.RED_AMOGUS_FENCE_GATE);
         redAmogusPool.wall(ModBlocks.RED_AMOGUS_WALL);
 
+        BlockStateModelGenerator.BlockTexturePool blueAmogusPool
+                = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLUE_AMOGUS_BLOCK);
+        blueAmogusPool.stairs(ModBlocks.BLUE_AMOGUS_STAIRS);
+        blueAmogusPool.slab(ModBlocks.BLUE_AMOGUS_SLAB);
+        blueAmogusPool.button(ModBlocks.BLUE_AMOGUS_BUTTON);
+        blueAmogusPool.pressurePlate(ModBlocks.BLUE_AMOGUS_PRESSURE_PLATE);
+        blueAmogusPool.fence(ModBlocks.BLUE_AMOGUS_FENCE);
+        blueAmogusPool.fenceGate(ModBlocks.BLUE_AMOGUS_FENCE_GATE);
+        blueAmogusPool.wall(ModBlocks.BLUE_AMOGUS_WALL);
+
         blockStateModelGenerator.registerDoor(ModBlocks.RED_AMOGUS_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.RED_AMOGUS_TRAPDOOR);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_AMOGUS_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLUE_AMOGUS_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLUE_AMOGUS_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAGIC_AMOGUS_BLOCK);
     }
 
